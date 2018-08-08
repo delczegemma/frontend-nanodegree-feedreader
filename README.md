@@ -11,7 +11,7 @@ The Feed Reader Testing is an rss reader provided by Udacity for a testing proje
 
 ## Instructions
 
-The website and its built-in tester can be seen on any device but a browser is required. You can reach the page from [this GitHub Page](https://delczegemma.github.io/frontend-nanodegree-feedreader/). The test file can be found under `jasmine/spec/feedreader.js`.
+The website and its built-in tester can be seen on any device but a browser is required. The test file can be found under `jasmine/spec/feedreader.js`.
 
 
 ## Contributing
