@@ -59,8 +59,9 @@ $(function() {
          * the CSS to determine how we're performing the
          * hiding/showing of the menu element.
          */
+         let slideMenu = $('.slide-menu')
+
          it('is hidden by default',function() {
-            let slideMenu = $('.slide-menu')
             let transX = Number.parseFloat(slideMenu.css('transform').split(', ')[4]);
             let realWidth = slideMenu.outerWidth();
             //transX <= -realWidth
@@ -72,6 +73,15 @@ $(function() {
          * should have two expectations: does the menu display when
          * clicked and does it hide when clicked again.
          */
+         it('changes visibility when clicked', function(){
+            //If there is no such class selector, this jQuery function retuns an empty array
+            let arrayFilled = () => $('.menu-hidden .slide-menu');
+            expect(arrayFilled().length).not.toEqual(0);
+            $('.menu-icon-link').click();
+            expect(arrayFilled().length).toEqual(0);
+            $('.menu-icon-link').click();
+            expect(arrayFilled().length).not.toEqual(0);
+         })
     });
 
     /* TODO: Write a new test suite named "Initial Entries" */
