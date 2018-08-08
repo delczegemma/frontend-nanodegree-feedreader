@@ -1,11 +1,9 @@
-#Frontend Nanodegree Arcade Game
-===============================
+# Frontend Nanodegree Feedreader
 
 ## Table of Contents
 
 * [Description](#description)
 * [Instructions](#instructions)
-* [Resources](#resources)
 * [Contributing](#contributing)
 
 ## Description
