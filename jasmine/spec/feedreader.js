@@ -33,8 +33,7 @@ $(function() {
          */
          it('URLs exist',function(){
             for(const feed of allFeeds){
-                expect(feed.url).toBeDefined();
-                expect(feed.url).not.toBe("");
+                expect(feed.url).toBeTruthy();
             }
         });
 
@@ -44,8 +43,7 @@ $(function() {
          */
          it('names exist',function(){
             for(const feed of allFeeds){
-                expect(feed.name).toBeDefined();
-                expect(feed.name).not.toBe("");
+                expect(feed.name).toBeTruthy();
             }
         })
     });
