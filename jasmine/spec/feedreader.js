@@ -73,12 +73,14 @@ $(function() {
          */
          it('changes visibility when clicked', function(){
             //If there is no such class selector, this jQuery function retuns an empty array
-            let arrayFilled = () => $('.menu-hidden .slide-menu');
-            expect(arrayFilled().length).not.toEqual(0);
+            //let arrayFilled = () => $('.menu-hidden .slide-menu');
+            //expect(arrayFilled().length).not.toEqual(0);
+            expect($('body').hasClass("menu-hidden")).not.toBe(true);
             $('.menu-icon-link').click();
             expect(arrayFilled().length).toEqual(0);
             $('.menu-icon-link').click();
-            expect(arrayFilled().length).not.toEqual(0);
+            //expect(arrayFilled().length).not.toEqual(0);
+            expect($('body').hasClass("menu-hidden")).not.toBe(true);
          })
     });
 
