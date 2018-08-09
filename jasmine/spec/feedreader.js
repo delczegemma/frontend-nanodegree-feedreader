@@ -81,14 +81,12 @@ $(function() {
              * this jQuery function retuns an empty array
              */
 
-            //let arrayFilled = () => $('.menu-hidden .slide-menu');
-            //expect(arrayFilled().length).not.toEqual(0);
-            expect($('body').hasClass("menu-hidden")).not.toBe(true);
             $('.menu-icon-link').click();
-            expect(arrayFilled().length).toEqual(0);
+            /* ensure that body does not have class menu-hidden */
+            expect($('body').hasClass('menu-hidden')).toBe(false);
             $('.menu-icon-link').click();
-            //expect(arrayFilled().length).not.toEqual(0);
-            expect($('body').hasClass("menu-hidden")).not.toBe(true);
+            /* body should have class menu-hidden */
+            expect($('body').hasClass('menu-hidden')).toBe(true);
          })
     });
 
