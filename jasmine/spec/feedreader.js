@@ -95,7 +95,7 @@ $(function() {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
          it('exist after feed loading',function(){
-            expect($('.feed .entry').length).not.toEqual(0);
+            expect($('.feed .entry').length).toBeGreaterThan(0);
          })
     })
 
